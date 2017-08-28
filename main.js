@@ -28,8 +28,10 @@ function drawSVG(pathID){
 
 function switchSVG(path)
 {
-    // $("#animate").hide();
-    // $("#glow").hide();
     $("#JL").show();
-    // $("#logoSVG").attr("data-aos","fade-up");
 }
+
+function hideStart(){
+    $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
+    $("#aboutSection").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
+};

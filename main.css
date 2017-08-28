@@ -21,6 +21,24 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   stroke-width: 5.5px;
 }
 
-#about-SVG{
-  display: none;
+.fade-hide{
+  position:absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fade-show{
+  position:static;
+  visibility: visible;
+  opacity: 1;
+}
+
+#svgContainer{
+  height: 100g
+}
+
+#about-info{
+  height:85vh;
+  margin-left: 25px;
+  margin-right: 25px;
 }
