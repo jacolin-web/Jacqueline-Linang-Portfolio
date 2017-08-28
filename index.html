@@ -7,8 +7,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
   <link rel="stylesheet" href="aos/dist/aos.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="main.css">
-  <!-- <link rel="stylesheet" href="slick/slick.css"> -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="aos/dist/aos.js"></script>
   <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
@@ -48,14 +48,13 @@
     <section id="aboutSection" class="hero fade-hide is-fullheight">
       <div id="aboutDiv">
       <div class="columns is-vcentered">
-        <div class="column is-4">
+        <div class="column is-3">
           <div id="svg-container">
           <svg
-            id="aboutSVG"
-            width="100%"
+            width="133%"
             height="100%"
             preserveAspectRatio="xMinYMax meet"
-            viewBox="-45 100 135 110"
+            viewBox="0 100 135 110"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -69,16 +68,26 @@
                <image xlink:href="img/mirrored-pic.png"/>
              </pattern>
            </defs>
-            <g id="about-SVG">
-              <path d="M-0.008,41.757l107.36,97.784l0,-139.541l-107.36,41.757Z" />
-              <path d="M0.377,50.001l66.319,61.123l-66.694,62.646l0.375,-123.769Z"/>
+
+           <defs>
+             <clipPath id="aboutpic">
+               <path d="M-0.008,41.757l107.36,97.784l0,-139.541l-107.36,41.757Z" />
+               <path d="M0.377,50.001l66.319,61.123l-66.694,62.646l0.375,-123.769Z"/>
+             </clipPath>
+           </defs>
+            <g id="aboutSVG">
+              <!-- <path d="M-0.008,41.757l107.36,97.784l0,-139.541l-107.36,41.757Z" />
+              <path d="M0.377,50.001l66.319,61.123l-66.694,62.646l0.375,-123.769Z"/> -->
               <text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:25px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">About Me</text>
             </g>
+
+            <image w3-animate-bottom width="250" height="187" x="-130" y="-10" xlink:href="img/mirrored-pic.png" clip-path="url(#aboutpic)" />
+
             </svg>
           </div><!-- End of container -->
         </div><!-- End of SVG column -->
 
-        <div id="about-info"class="column is-7" style="background-color:white; border:black;">
+        <div id="about-info"class="column is-8" style="background-color:white; border:black;">
         </div><!-- End of about info div -->
 
         <!-- <div class="column is-1" style="background-color:white;">
