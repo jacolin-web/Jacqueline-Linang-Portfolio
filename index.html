@@ -15,7 +15,30 @@
   <script src="main.js"></script>
 </head>
 <body class="gradient">
-  <div class="container">
+  <!-- NAVIGATION BEGINS -->
+  <!-- <nav class="navbar">
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <img id="logoPNG" src="img/brand-logo.png" />
+      </div>
+    </div>
+  </nav>
+  <div class="container"> -->
+  <nav class="navbar is-pulled-right">
+      <div class="navbar-burger burger" data-target="navMenuExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-brand">
+          <img id="logoPNG" src="img/brand-logo.png" />
+        </div>
+      </div>
+  </nav>
+
+    <!-- START LOGO BEGINS -->
     <div class="columns is-mobile is-centered">
       <div id="logoSVG" class="column is-half fade-show" onclick="hideStart()" >
         <svg
@@ -45,8 +68,8 @@
           </svg>
       </div>
     </div>
+    <!-- ABOUT SECTION BEGINS -->
     <section id="aboutSection" class="hero fade-hide is-fullheight">
-      <div id="aboutDiv">
       <div class="columns is-vcentered">
         <div class="column is-3">
           <svg
@@ -92,14 +115,9 @@
               <a>Reach me here</a>
           </p>
         </div><!-- End of about info div -->
-
-        <!-- <div class="column is-1" style="background-color:white;">
-          nav bar holder
-        </div>// End of of nav bar -->
       </div>
-  </div><!-- End of about-section -->
-</section>
-</div>
+    </div><!-- End of about-section -->
+    </section>
 </header>
 </body>
 </html>

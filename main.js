@@ -33,7 +33,9 @@ function switchSVG(path)
 }
 
 function hideStart(){
-    $('#logoSVG').addClass('nav-svg animated slideOutRight');
+    // $('#logoSVG').addClass('nav-svg animated slideOutRight');
+    $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
+    $("#nav").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
     $("#aboutSection").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
 
 };
