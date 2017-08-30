@@ -79,8 +79,8 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 .navbar{
   /*position: fixed*/
-  /*margin-top: 1rem;*/
-  margin: 0px 30px 0px -30px !important;
+  margin-top: 1.5rem;
+  /*margin: 0px 30px 0px -30px !important;*/
 }
 
 .column.is-1.is-offset-11{

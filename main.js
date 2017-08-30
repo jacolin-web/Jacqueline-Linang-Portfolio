@@ -30,6 +30,7 @@ function drawSVG(pathID){
 function switchSVG(path)
 {
     $("#JL").show();
+    hideStart();
 }
 
 function hideStart(){
