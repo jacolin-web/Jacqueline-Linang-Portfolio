@@ -5,19 +5,19 @@
 <head>
   <title>Jacqueline Linang's Website</title>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-  <link rel="stylesheet" href="aos/dist/aos.css" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="lib/animate.css">
   <link rel="stylesheet" href="main.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="aos/dist/aos.js"></script>
-  <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+  <!-- <script src="aos/dist/aos.js"></script> -->
+  <script src="lib/jquery-ui-1.12.1/jquery-ui.js"></script>
   <script src="main.js"></script>
 </head>
-<body>
+<body class="gradient">
   <div class="container">
     <div class="columns is-mobile is-centered">
-      <div id="logoSVG" class="column is-half fade-show" onclick="hideStart()" data-aos="slide-up" data-aos-delay="400">
+      <div id="logoSVG" class="column is-half fade-show" onclick="hideStart()" >
         <svg
           width="100%"
           height="100%"
@@ -49,7 +49,6 @@
       <div id="aboutDiv">
       <div class="columns is-vcentered">
         <div class="column is-3">
-          <div id="svg-container">
           <svg
             width="133%"
             height="100%"
@@ -81,13 +80,17 @@
               <text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:25px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">About Me</text>
             </g>
 
-            <image w3-animate-bottom width="250" height="187" x="-130" y="-10" xlink:href="img/mirrored-pic.png" clip-path="url(#aboutpic)" />
+            <image width="250" height="187" x="-130" y="-10" xlink:href="img/mirrored-pic.png" clip-path="url(#aboutpic)" />
 
             </svg>
-          </div><!-- End of container -->
         </div><!-- End of SVG column -->
 
-        <div id="about-info"class="column is-8" style="background-color:white; border:black;">
+        <div id="about-info"class="column is-8">
+          <text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:67px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">j</text><text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:55px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">acqueline</text><p>
+            is a <a>student,</a><br />
+              working to become a better front-end developer,<br/> and eventually full-stack.<br/></br/>
+              <a>Reach me here</a>
+          </p>
         </div><!-- End of about info div -->
 
         <!-- <div class="column is-1" style="background-color:white;">

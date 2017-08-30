@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-    AOS.init();
+    // AOS.init();
+    $('#logoSVG').addClass('animated slideInUp');
     var logoLeft = document.querySelector('#animateLeft');
     var logoRight = document.querySelector('#animateRight');
     drawSVG(logoLeft);
@@ -32,7 +33,7 @@ function switchSVG(path)
 }
 
 function hideStart(){
-    $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
+    $('#logoSVG').addClass('nav-svg animated slideOutRight');
     $("#aboutSection").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
-    
+
 };
