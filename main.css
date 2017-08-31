@@ -63,9 +63,9 @@ body.gradient{
   margin: .5rem 1rem;
 }
 
-.navLogos path{
+/*#laptopGirl svg path{
   fill: #fff;
-}
+}*/
 
 p{
   font-size:50px;
@@ -83,8 +83,8 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   filter: url(#blur-filter);
 }
 
-#JL svg:hover   path{
-  stroke-width: 5.5px;
+#JL svg:hover path{
+  stroke-width: 7px;
 }
 
 .fade-hide{
