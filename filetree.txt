@@ -2,7 +2,6 @@ start
  ├──about
  │   ├──skills
  │   └──keywords
- │   └──bujo
  ├──👩‍🎓: student
  │  └──education/coursework
  ├──💼:working/front end developer?
@@ -10,4 +9,6 @@ start
  ├──📚
  │  └──articles
  │  └──writings
- └──👨‍👩‍👦activities/social
+ │  └──bujo
+ ├──👨‍👩‍👦activities/social
+ └─✉️s

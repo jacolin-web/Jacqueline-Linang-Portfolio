@@ -32,15 +32,41 @@ body.gradient{
  background-size: 15px 15px;
 }*/
 
+/*
+
+  CUSTOMIZED CSS FOR NAV BAR
+
+*/
 .navbar{
   background-color: transparent !important;
 }
 
-#logoPNG{
-  width: 40px;
-  height: 32px;
+.nav-svg{
+  width: 200px !important;
+}
+
+.navbar-menu{
+  /*position: fixed*/
+  margin-top: 1.5rem;
+  /*margin: 0px 30px 0px -30px !important;*/
+}
+
+/*
+
+  NAV BAR ICONS CSS
+
+*/
+
+.navLogos{
+  width: 50px;
+  height: 40px;
   margin: .5rem 1rem;
 }
+
+.navLogos path{
+  fill: #fff;
+}
+
 p{
   font-size:50px;
   line-height: 3rem;
@@ -73,20 +99,16 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   opacity: 1;
 }
 
-.nav-svg{
-  width: 200px !important;
-}
-
-.navbar{
-  /*position: fixed*/
-  margin-top: 1.5rem;
-  /*margin: 0px 30px 0px -30px !important;*/
-}
 
 .column.is-1.is-offset-11{
   margin-left: 95% !important;
 }
 
+/*
+
+  ABOUT SECTION CSS STARTS HERE
+
+*/
 #about-info{
   /*height:85vh;*/
   background-color: white;
@@ -94,4 +116,10 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   padding: 20px;
   margin-left: 25px;
   margin-right: 25px;
+}
+
+#aboutSVG{
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
 }
