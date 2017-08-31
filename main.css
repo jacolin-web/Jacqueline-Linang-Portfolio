@@ -57,6 +57,10 @@ body.gradient{
 
 */
 
+.menu-list a:hover{
+  background-color: transparent !important;
+}
+
 .navLogos{
   width: 50px;
   height: 40px;
