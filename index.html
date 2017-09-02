@@ -15,41 +15,44 @@
   <script src="main.js"></script>
 </head>
 <body class="gradient">
-  <!-- NAVIGATION BEGINS -->
-  <nav id="nav" class="navbar is-pulled-right fade-hide">
-    <div class="navbar-burger burger" data-target="navMenuExample">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <div class="navbar-menu">
-      <div class="navbar-brand">
-        <!-- <a href="index.html"><img id="logoPNG" src="img/brand-logo.png" /></a> -->
-        <aside class="menu">
-          <ul class="menu-list">
-            <a href="/index.html"><img id="logoPNG" class="navLogos" src="img/brand-logo.png" /></a>
-            <li>
-              <a href="index.html"><object id="aboutNav" class="navLogos" data="icons/svg/008-girl-with-laptop.svg" type="image/svg+xml"></object></a>
-            </li>
-            <li>
-              <a href="index.html"><object id="workNav" class="navLogos" data="icons/svg/019-briefcase.svg" type="image/svg+xml"></object></a>
-            </li>
-            <li>
-              <a href="index.html"><object id="bookNav" class="navLogos" data="icons/svg/016-notebook.svg" type="image/svg+xml"></object></a>
-            </li>
-            <li>
-              <a href="index.html"><object id="activityNav" class="navLogos" data="icons/svg/003-social.svg" type="image/svg+xml"></object></a>
-            </li>
-            <li>
-              <a href="index.html"><object id="contactNav" class="navLogos" data="icons/svg/002-contact.svg" type="image/svg+xml"></object></a>
-            </li>
-          </ul>
-        </aside>
-      </div>
-    </div>
-  </nav>
+  <!-- CONTAINER BEGINS  -->
   <div class="container">
+    <!-- NAVIGATION BEGINS -->
+    <nav id="nav" class="navbar is-pulled-right fade-hide">
+      <div class="navbar-burger burger" data-target="navMenuExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-brand">
+          <!-- <a href="index.html"><img id="logoPNG" src="img/brand-logo.png" /></a> -->
+          <aside class="menu">
+            <ul class="menu-list animate pulse infinite">
+              <div id="test" onmouseover="animateNav">
+                <a href=""><img onclick="animateNav" id="logoPNG" class="navLogos" src="img/brand-logo.png"/></a>
+              </div>
+              <li>
+                <a href="index.html"><object id="aboutNav" class="navLogos" data="icons/svg/008-girl-with-laptop.svg" type="image/svg+xml"></object></a>
+              </li>
+              <li>
+                <a href="index.html"><object id="workNav" class="navLogos" data="icons/svg/019-briefcase.svg" type="image/svg+xml"></object></a>
+              </li>
+              <li>
+                <a href="index.html"><object id="bookNav" class="navLogos" data="icons/svg/016-notebook.svg" type="image/svg+xml"></object></a>
+              </li>
+              <li>
+                <a href="index.html"><object id="activityNav" class="navLogos" data="icons/svg/003-social.svg" type="image/svg+xml"></object></a>
+              </li>
+              <li>
+                <a href="index.html"><object id="contactNav" class="navLogos" data="icons/svg/002-contact.svg" type="image/svg+xml"></object></a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </nav><!-- End of Navigation  -->
 
     <!-- START LOGO BEGINS -->
     <div class="columns is-mobile is-centered">
@@ -84,7 +87,7 @@
     <!-- ABOUT SECTION BEGINS -->
     <section id="aboutSection" class="hero fade-hide is-fullheight">
       <div class="columns is-vcentered">
-        <div id="aboutSVG" class="column is-3">
+        <div id="aboutSVG" onclick="animateNav(this)" class="column is-3">
           <svg
             width="133%"
             height="100%"
@@ -121,16 +124,16 @@
             </svg>
         </div><!-- End of SVG column -->
 
-        <div id="about-info"class="column is-8">
-          <text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:67px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">j</text><text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:55px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">acqueline</text><p>
+        <div id="about-info" class="column is-8">
+          <text class="" transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:67px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">j</text><text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:55px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">acqueline</text><p>
             is a <a>student,</a><br />
               working to become a better front-end developer,<br/> and eventually full-stack.<br/></br/>
               <a>Reach me here</a>
           </p>
         </div><!-- End of about info div -->
       </div>
-    </div><!-- End of about-section -->
-    </section>
+    </div>
+    </section><!-- End of about-section -->
 </header>
 </body>
 </html>

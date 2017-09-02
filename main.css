@@ -7,6 +7,10 @@ body.gradient{
     overflow: hidden;
 }
 
+/*.container{
+  height: 100vh !important;
+}*/
+
 /*.gradientAndDotted{
   background: -webkit-radial-gradient(rgb(0, 0, 0) 0, rgb(0, 0, 0) 2%, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 6%, rgb(0, 0, 0) 7%, rgba(20,10,10,1) 8%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 13%, rgb(0, 0, 0) 14%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), -webkit-linear-gradient(-90deg, #91A8D0 0, #F7CAC9 100%);
    background: -moz-radial-gradient(rgb(0, 0, 0) 0, rgb(0, 0, 0) 2%, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 6%, rgb(0, 0, 0) 7%, rgba(20,10,10,1) 8%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 13%, rgb(0, 0, 0) 14%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), -moz-linear-gradient(180deg, #91A8D0 0, #F7CAC9 100%);
@@ -38,6 +42,8 @@ body.gradient{
 
 */
 .navbar{
+  /*margin-left: 230px !important;*/
+  /*position:fixed !important;*/
   background-color: transparent !important;
 }
 
@@ -91,6 +97,7 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   stroke-width: 7px;
 }
 
+
 .fade-hide{
   position:absolute;
   opacity: 0;
@@ -101,11 +108,6 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   position:static;
   visibility: visible;
   opacity: 1;
-}
-
-
-.column.is-1.is-offset-11{
-  margin-left: 95% !important;
 }
 
 /*

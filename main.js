@@ -30,6 +30,19 @@ function updateFill() {
       // });
   }//end of for loops
 }
+
+//Animation for navigation icons
+function animateNav(navObj){
+  if($(navObj).hasClass('animated pulse')){
+    console.log($(navObj).removeClass('animated pulse'));
+  }
+  else{
+    // var id = navObj.id;
+    // $(id).addClass('animated pulse');
+    console.log($(navObj).addClass('animated pulse'));
+  }
+}
+
 function drawSVG(pathID){
   var path = pathID;
   var length = path.getTotalLength();
@@ -59,9 +72,8 @@ function hideStart(){
     $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
     $("#nav").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
     $("#aboutSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
-    console.log($('#aboutSection').css('opacity'));
-    if($('#aboutSection').css('opacity') == 0) {
-        console.log("I'm gonna do it!")
-        $('#aboutSVG').addClass('animated pulse');
-    }
+    // if($('#aboutSection').css('opacity') == 0) {
+    //     $('#aboutSVG').addClass('animated pulse infinite');
+    //     console.log("I'M DONE I'M DONE");
+    // }
 }
