@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $("body").scrollTop(0);
     $('#logoSVG').addClass('animated slideInUp');
     var logoLeft = document.querySelector('#animateLeft');
     var logoRight = document.querySelector('#animateRight');
@@ -71,6 +72,7 @@ function hideStart(){
     $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
     $("#nav").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
     $("html").removeClass("start");
+    $(document).scrollTop(0);
     $("#content").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
     // console.log($("#aboutCover").addClass("animated fadeInLeft"));
 }
