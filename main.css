@@ -103,6 +103,10 @@ p{
   font-family: 'Raleway', sans-serif;
 }
 
+.columns.is-gapless > .column {
+  padding: 3rem !important;
+}
+
 svg:hover #glowLeft, svg:hover  #glowRight{
   stroke: white;
   filter: url(#blur-filter);
@@ -139,39 +143,32 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 /*
 
-  ABOUT SECTION CSS STARTS HERE
+  SECTION CSS STARTS HERE
 
 */
-#aboutInfo{
+#aboutInfo, #schoolInfo, #workInfo, #activityInfo, #contactInfo{
   background-color: white;
   height:100vh;
-  padding: 20px;
+  padding: 3rem;
 }
 
-#aboutCover{
+#aboutCover, #schoolCover, #workCover, #activityCover, #contactCover{
   height: 100vh;
-   -vendor-animation-delay: 2s;
-  background-image: url(img/about-pic.jpg);
   background-position: left center;
   background-repeat: no-repeat;
 }
 
+#aboutCover{
+  background-image: url(img/about-pic.jpg);
+}
 /*
 
   SCHOOL SECTION CSS STARTS HERE
 
 */
-#schoolInfo{
-  background-color: white;
-  height:100vh;
-  padding: 20px;
-}
 
 #schoolCover{
-  height: 100vh;
   background-image: url(img/switches.gif);
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 /*
@@ -179,17 +176,10 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   WORK SECTION CSS STARTS HERE
 
 */
-#workInfo{
-  background-color: white;
-  height:100vh;
-  padding: 20px;
-}
 
 #workCover{
-  height: 100vh;
-  background-image: url(img/moodwave.png);
+  background-image: url(img/moodwave.gif);
   background-position: center center;
-  background-repeat: no-repeat;
 }
 
 /*
@@ -197,18 +187,10 @@ svg:hover #glowLeft, svg:hover  #glowRight{
    ACTIVITY SECTION CSS STARTS HERE
 
 */
-#activityInfo{
-  background-color: white;
-  height:100vh;
-  padding: 20px;
-  text-overflow: ellipsis;
-}
 
 #activityCover{
-  height: 100vh;
   background-image: url(img/jacofhearts.gif);
   background-position: center center;
-  background-repeat: no-repeat;
 }
 
 /*
@@ -216,15 +198,8 @@ svg:hover #glowLeft, svg:hover  #glowRight{
    CONTACT SECTION CSS STARTS HERE
 
 */
-#contactInfo{
-  background-color: white;
-  height:100vh;
-  padding: 20px;
-}
 
 #contactCover{
-  height: 100vh;
   background-image: url(img/selfietiles.png);
   background-position: center center;
-  background-repeat: no-repeat;
 }
