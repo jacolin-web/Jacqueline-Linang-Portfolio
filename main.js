@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
 $(window).on( "load", function(){
   // Get the SVG document inside the Object tag
-  updateFill();
+  // updateFill();
 
 });
 
@@ -72,6 +72,7 @@ function hideStart(){
     $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
     $("#nav").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
     $("#aboutSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
+    $("#schoolSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
     // if($('#aboutSection').css('opacity') == 0) {
     //     $('#aboutSVG').addClass('animated pulse infinite');
     //     console.log("I'M DONE I'M DONE");

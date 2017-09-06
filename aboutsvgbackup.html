@@ -1,0 +1,34 @@
+<svg
+  width="133%"
+  height="100%"
+  preserveAspectRatio="xMinYMax meet"
+  viewBox="0 100 135 110"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xml:space="preserve"
+  style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+  <filter id="blur-filter" x="-2" y="-2" width="200" height="200">
+   <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+ </filter>
+ <defs>
+   <pattern id="imgpattern" x="0" y="0" width="1" height="1">
+     <image xlink:href="img/mirrored-pic.png"/>
+   </pattern>
+ </defs>
+
+ <defs>
+   <clipPath id="aboutpic">
+     <path d="M-0.008,41.757l107.36,97.784l0,-139.541l-107.36,41.757Z" />
+     <path d="M0.377,50.001l66.319,61.123l-66.694,62.646l0.375,-123.769Z"/>
+   </clipPath>
+ </defs>
+  <g id="aboutSVG">
+    <!-- <path d="M-0.008,41.757l107.36,97.784l0,-139.541l-107.36,41.757Z" />
+    <path d="M0.377,50.001l66.319,61.123l-66.694,62.646l0.375,-123.769Z"/> -->
+    <text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:25px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">About Me</text>
+  </g>
+
+  <image width="250" height="187" x="-130" y="-10" xlink:href="img/mirrored-pic.png" clip-path="url(#aboutpic)" />
+
+  </svg>

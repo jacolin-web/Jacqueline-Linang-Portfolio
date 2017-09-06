@@ -120,12 +120,11 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   background-color: white;
   height:100vh;
   padding: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
 }
 
-#aboutSVG{
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
+#aboutCover{
+  background-image: url(img/mirrored-pic.png);
+  background-position: left center;
 }

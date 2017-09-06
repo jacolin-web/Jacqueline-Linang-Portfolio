@@ -5,18 +5,22 @@
 <head>
   <title>Jacqueline Linang's Website</title>
   <meta charset="utf-8">
+  <!-- Font Dependencies -->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+  <!-- CSS Dependencies -->
   <link rel="stylesheet" href="lib/animate.css">
+  <link rel="stylesheet" href="lib/aos/aos.css">
   <link rel="stylesheet" href="main.css">
+  <!-- JS Dependencies -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <!-- <script src="lib/snap.svg.js"></script> -->
+  <script src="lib/aos/aos.js"></script>
   <script src="lib/jquery-ui-1.12.1/jquery-ui.js"></script>
   <script src="main.js"></script>
 </head>
 <body class="gradient">
   <!-- CONTAINER BEGINS  -->
-  <div class="container">
+  <!-- <div class="container"> -->
     <!-- NAVIGATION BEGINS -->
     <nav id="nav" class="navbar is-pulled-right fade-hide">
       <div class="navbar-burger burger" data-target="navMenuExample">
@@ -25,9 +29,9 @@
         <span></span>
       </div>
 
-      <div class="navbar-menu">
+      <!-- <div class="navbar-menu">
         <div class="navbar-brand">
-          <!-- <a href="index.html"><img id="logoPNG" src="img/brand-logo.png" /></a> -->
+          <a href="index.html"><img id="logoPNG" src="img/brand-logo.png" /></a>
           <aside class="menu">
             <ul class="menu-list">
               <div id="navanimate" onmouseover="animateNav(this)">
@@ -51,11 +55,11 @@
             </ul>
           </aside>
         </div>
-      </div>
+      </div> -->
     </nav><!-- End of Navigation  -->
 
     <!-- START LOGO BEGINS -->
-    <div class="columns is-mobile is-centered">
+    <div class="columns is-desktop is-centered">
       <div id="logoSVG" class="column is-half fade-show" onclick="hideStart()" >
         <svg
           width="100%"
@@ -84,47 +88,17 @@
           </svg>
       </div>
     </div>
+
     <!-- ABOUT SECTION BEGINS -->
     <section id="aboutSection" class="hero fade-hide is-fullheight">
       <div class="columns is-vcentered">
-        <div id="aboutSVG" onclick="animateNav(this)" class="column is-3">
-          <svg
-            width="133%"
-            height="100%"
-            preserveAspectRatio="xMinYMax meet"
-            viewBox="0 100 135 110"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xml:space="preserve"
-            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-            <filter id="blur-filter" x="-2" y="-2" width="200" height="200">
-             <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
-           </filter>
-           <defs>
-             <pattern id="imgpattern" x="0" y="0" width="1" height="1">
-               <image xlink:href="img/mirrored-pic.png"/>
-             </pattern>
-           </defs>
+        <div id="aboutCover" style="height: 100vh; background-color: yellow;" onclick="animateNav(this)" class="column">
+          <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
+          <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
 
-           <defs>
-             <clipPath id="aboutpic">
-               <path d="M-0.008,41.757l107.36,97.784l0,-139.541l-107.36,41.757Z" />
-               <path d="M0.377,50.001l66.319,61.123l-66.694,62.646l0.375,-123.769Z"/>
-             </clipPath>
-           </defs>
-            <g id="aboutSVG">
-              <!-- <path d="M-0.008,41.757l107.36,97.784l0,-139.541l-107.36,41.757Z" />
-              <path d="M0.377,50.001l66.319,61.123l-66.694,62.646l0.375,-123.769Z"/> -->
-              <text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:25px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">About Me</text>
-            </g>
-
-            <image width="250" height="187" x="-130" y="-10" xlink:href="img/mirrored-pic.png" clip-path="url(#aboutpic)" />
-
-            </svg>
         </div><!-- End of SVG column -->
 
-        <div id="about-info" class="column is-8">
+        <div id="about-info" class="column is-half">
           <text class="" transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:67px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">j</text><text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:55px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">acqueline</text><p>
             is a <a>student,</a><br />
               working to become a better front-end developer,<br/> and eventually full-stack.<br/></br/>
@@ -132,8 +106,29 @@
           </p>
         </div><!-- End of about info div -->
       </div>
-    </div>
+    <!-- </div> -->
     </section><!-- End of about-section -->
+
+    <!-- EDUCATION BEGINS -->
+    <section id="schoolSection" class="hero fade-hide is-fullheight">
+      <div class="columns is-vcentered">
+        <div id="schoolCover" style="height: 100vh; background-color: yellow;" onclick="animateNav(this)" class="column">
+          <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
+          <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
+
+        </div><!-- End of SVG column -->
+
+        <div id="school-info" class="column is-half">
+          <text class="" transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:67px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">j</text><text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:55px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">acqueline</text><p>
+            is a <a>student,</a><br />
+              working to become a better front-end developer,<br/> and eventually full-stack.<br/></br/>
+              <a>Reach me here</a>
+          </p>
+        </div><!-- End of about info div -->
+      </div>
+    <!-- </div> -->
+    </section><!-- End of about-section -->
+
 </header>
 </body>
 </html>
