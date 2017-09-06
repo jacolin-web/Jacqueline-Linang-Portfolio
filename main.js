@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    // AOS.init();
+    AOS.init();
     $('#logoSVG').addClass('animated slideInUp');
     var logoLeft = document.querySelector('#animateLeft');
     var logoRight = document.querySelector('#animateRight');
@@ -33,13 +33,13 @@ function updateFill() {
 
 //Animation for navigation icons
 function animateNav(navObj){
-  if($(navObj).hasClass('animated pulse')){
-    console.log($(navObj).removeClass('animated pulse'));
+  if($(navObj).hasClass('animated flipInY')){
+    console.log($(navObj).removeClass('animated flipInY'));
   }
   else{
     // var id = navObj.id;
     // $(id).addClass('animated pulse');
-    console.log($(navObj).addClass('animated pulse'));
+    console.log($(navObj).addClass('animated flipInY'));
   }
 }
 
@@ -74,8 +74,5 @@ function hideStart(){
     $("html").removeClass("start");
     $("#aboutSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
     $("#schoolSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
-    // if($('#aboutSection').css('opacity') == 0) {
-    //     $('#aboutSVG').addClass('animated pulse infinite');
-    //     console.log("I'M DONE I'M DONE");
-    // }
+    console.log($("#aboutCover").addClass("animated fadeInLeft"));
 }

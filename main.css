@@ -100,6 +100,31 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 }
 
 #aboutCover{
-  background-image: url(img/mirrored-pic.png);
+  height: 100vh;
+   -vendor-animation-delay: 2s;
+  background-image: url(img/about-pic.jpg);
   background-position: left center;
+  background-repeat: no-repeat;
+}
+
+/*
+
+  SCHOOL SECTION CSS STARTS HERE
+
+*/
+#school-info{
+  /*height:85vh;*/
+  background-color: white;
+  height:100vh;
+  padding: 20px;
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
+}
+
+#schoolCover{
+  height: 100vh;
+   -vendor-animation-delay: 2s;
+  background-image: url(img/about-pic.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
 }
