@@ -197,6 +197,27 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   background-repeat: no-repeat;
 }
 
+/*
+
+   ACTIVITY SECTION CSS STARTS HERE
+
+*/
+#activityInfo{
+  /*height:85vh;*/
+  background-color: white;
+  height:100vh;
+  padding: 20px;
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
+}
+
+#activityCover{
+  height: 100vh;
+   -vendor-animation-delay: 2s;
+  background-image: url(img/moodwave.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
 /*
 
