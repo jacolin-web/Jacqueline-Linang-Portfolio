@@ -1,40 +1,15 @@
+html.start{
+  overflow-y: hidden !important;
+}
+
 body.gradient{
     background: red;
     background: -webkit-linear-gradient(#91A8D0, #F7CAC9);
     background: -o-linear-gradient(#91A8D0, #F7CAC9);
     background: -moz-linear-gradient(#91A8D0, #F7CAC9);
     background: linear-gradient(#91A8D0, #F7CAC9);
-    overflow: hidden;
+    /*overflow-y: hidden;*/
 }
-
-/*.container{
-  height: 100vh !important;
-}*/
-
-/*.gradientAndDotted{
-  background: -webkit-radial-gradient(rgb(0, 0, 0) 0, rgb(0, 0, 0) 2%, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 6%, rgb(0, 0, 0) 7%, rgba(20,10,10,1) 8%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 13%, rgb(0, 0, 0) 14%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), -webkit-linear-gradient(-90deg, #91A8D0 0, #F7CAC9 100%);
-   background: -moz-radial-gradient(rgb(0, 0, 0) 0, rgb(0, 0, 0) 2%, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 6%, rgb(0, 0, 0) 7%, rgba(20,10,10,1) 8%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 13%, rgb(0, 0, 0) 14%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), -moz-linear-gradient(180deg, #91A8D0 0, #F7CAC9 100%);
-   background: radial-gradient(rgb(0, 0, 0) 0, rgb(0, 0, 0) 2%, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgb(0, 0, 0) 5%, rgb(0, 0, 0) 6%, rgb(0, 0, 0) 7%, rgba(20,10,10,1) 8%, rgb(0, 0, 0) 10%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 13%, rgb(0, 0, 0) 14%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), linear-gradient(180deg, #91A8D0 0, #F7CAC9 100%);
-   background-position: 0 0, 50% 50%;
-   -webkit-background-origin: padding-box;
-   background-origin: padding-box;
-   -webkit-background-clip: border-box;
-   background-clip: border-box;
-   -webkit-background-size: 30px 30px, auto auto;
-   background-size: 15px 15px, auto auto;
-}
-
-.dotted{
- background: -webkit-radial-gradient(#7E7d81 0, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgba(132,132,132,1) 5%, rgba(20,10,10,1) 8%, rgb(255,255,255) 15%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), (#91A8D0, #F7CAC9);
- background: -moz-radial-gradient(#7E7d81 0, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgba(132,132,132,1) 5%, rgba(20,10,10,1) 8%, rgb(255,255,255) 15%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), (#91A8D0, #F7CAC9);
- background: radial-gradient(#7E7d81 0, rgba(20,10,10,1) 4%, rgba(20,10,10,1) 5%, rgba(132,132,132,1) 5%, rgba(20,10,10,1) 8%, rgb(255,255,255) 15%, rgba(0,0,0,0) 16%, rgba(0,0,0,0) 100%), (#91A8D0, #F7CAC9);
- -webkit-background-origin: padding-box;
- background-origin: padding-box;
- -webkit-background-clip: border-box;
- background-clip: border-box;
- -webkit-background-size: 30px 30px;
- background-size: 15px 15px;
-}*/
 
 /*
 

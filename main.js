@@ -71,6 +71,7 @@ function hideStart(){
     // $('#logoSVG').addClass('nav-svg animated slideOutRight');
     $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
     $("#nav").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
+    $("html").removeClass("start");
     $("#aboutSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
     $("#schoolSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
     // if($('#aboutSection').css('opacity') == 0) {
