@@ -76,7 +76,7 @@ function hideStart(){
 }
 
 function info(){
-  $("#schoolInfo").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
-  $("#schoolSecondaryInfo").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
+  $("#activityInfo").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
+  $("#activitySecondaryInfo").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
 
 }

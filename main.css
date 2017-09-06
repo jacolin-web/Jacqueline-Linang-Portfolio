@@ -75,7 +75,6 @@ body.gradient{
 .navbar-menu{
   /*position: fixed*/
   margin-top: 1.5rem;
-  /*margin: 0px 30px 0px -30px !important;*/
 }
 
 /*
@@ -131,18 +130,22 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   opacity: 1;
 }
 
+.fade-info{
+  position:static;
+  visibility: visible;
+  opacity: 1;
+  background-color: white;
+}
+
 /*
 
   ABOUT SECTION CSS STARTS HERE
 
 */
 #aboutInfo{
-  /*height:85vh;*/
   background-color: white;
   height:100vh;
   padding: 20px;
-  /*margin-left: 25px;*/
-  /*margin-right: 25px;*/
 }
 
 #aboutCover{
@@ -159,17 +162,13 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 */
 #schoolInfo{
-  /*height:85vh;*/
   background-color: white;
   height:100vh;
   padding: 20px;
-  /*margin-left: 25px;*/
-  /*margin-right: 25px;*/
 }
 
 #schoolCover{
   height: 100vh;
-   -vendor-animation-delay: 2s;
   background-image: url(img/switches.gif);
   background-position: center center;
   background-repeat: no-repeat;
@@ -181,18 +180,14 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 */
 #workInfo{
-  /*height:85vh;*/
   background-color: white;
   height:100vh;
   padding: 20px;
-  /*margin-left: 25px;*/
-  /*margin-right: 25px;*/
 }
 
 #workCover{
   height: 100vh;
-   -vendor-animation-delay: 2s;
-  background-image: url(img/jacofhearts.png);
+  background-image: url(img/moodwave.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -203,40 +198,15 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 */
 #activityInfo{
-  /*height:85vh;*/
   background-color: white;
   height:100vh;
   padding: 20px;
-  /*margin-left: 25px;*/
-  /*margin-right: 25px;*/
+  text-overflow: ellipsis;
 }
 
 #activityCover{
   height: 100vh;
-   -vendor-animation-delay: 2s;
-  background-image: url(img/moodwave.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/*
-
-   BOOK SECTION CSS STARTS HERE
-
-*/
-#bookInfo{
-  /*height:85vh;*/
-  background-color: white;
-  height:100vh;
-  padding: 20px;
-  /*margin-left: 25px;*/
-  /*margin-right: 25px;*/
-}
-
-#bookCover{
-  height: 100vh;
-   -vendor-animation-delay: 2s;
-  background-image: url(img/ADrunkInTheWoods.png);
+  background-image: url(img/jacofhearts.gif);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -247,18 +217,14 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 */
 #contactInfo{
-  /*height:85vh;*/
   background-color: white;
   height:100vh;
   padding: 20px;
-  /*margin-left: 25px;*/
-  /*margin-right: 25px;*/
 }
 
 #contactCover{
   height: 100vh;
-   -vendor-animation-delay: 2s;
-  background-image: url(img/selftiles.png);
+  background-image: url(img/selfietiles.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
