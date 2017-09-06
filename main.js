@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    AOS.init();
     $('#logoSVG').addClass('animated slideInUp');
     var logoLeft = document.querySelector('#animateLeft');
     var logoRight = document.querySelector('#animateRight');
@@ -11,9 +10,9 @@ $( document ).ready(function() {
 });
 
 $(window).on( "load", function(){
+  AOS.init();
   // Get the SVG document inside the Object tag
   // updateFill();
-
 });
 
 function updateFill() {
@@ -72,7 +71,6 @@ function hideStart(){
     $("#logoSVG").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
     $("#nav").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
     $("html").removeClass("start");
-    $("#aboutSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
-    $("#schoolSection").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
-    console.log($("#aboutCover").addClass("animated fadeInLeft"));
+    $("#content").switchClass("fade-hide", "fade-show", 1000, "easeInOutQuad" );
+    // console.log($("#aboutCover").addClass("animated fadeInLeft"));
 }

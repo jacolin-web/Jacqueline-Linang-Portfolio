@@ -1,3 +1,49 @@
+/*
+
+LOAD FONTS:
+Befolk,
+Bebas Neue
+
+*/
+
+@font-face {
+  /*
+  Credits completely go to
+  https://www.behance.net/hendra_maulia
+
+  */
+  font-family: Befolk;
+  src: url(fonts/BefolkScript.ttf);
+}
+
+@font-face {
+  /*
+  Credits completely go to
+  https://www.behance.net/hendra_maulia
+
+  */
+  font-family: Bebas Neue;
+  src: url(fonts/BebasNeueRegular.otf);
+}
+
+h1.lg{
+  display:inline;
+  float:left;
+  font-family: Befolk;
+  font-size: 62px;
+}
+
+h1{
+  font-family: Befolk;
+  font-size: 50px;
+}
+
+h2{
+  font-family: Bebas Neue;
+  font-size: 20px;
+}
+
+
 html.start{
   overflow-y: hidden !important;
 }
@@ -90,7 +136,7 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   ABOUT SECTION CSS STARTS HERE
 
 */
-#about-info{
+#aboutInfo{
   /*height:85vh;*/
   background-color: white;
   height:100vh;
@@ -112,7 +158,7 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   SCHOOL SECTION CSS STARTS HERE
 
 */
-#school-info{
+#schoolInfo{
   /*height:85vh;*/
   background-color: white;
   height:100vh;
@@ -124,7 +170,74 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 #schoolCover{
   height: 100vh;
    -vendor-animation-delay: 2s;
-  background-image: url(img/about-pic.jpg);
-  background-position: left center;
+  background-image: url(img/switches.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*
+
+  WORK SECTION CSS STARTS HERE
+
+*/
+#workInfo{
+  /*height:85vh;*/
+  background-color: white;
+  height:100vh;
+  padding: 20px;
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
+}
+
+#workCover{
+  height: 100vh;
+   -vendor-animation-delay: 2s;
+  background-image: url(img/jacofhearts.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/*
+
+   BOOK SECTION CSS STARTS HERE
+
+*/
+#bookInfo{
+  /*height:85vh;*/
+  background-color: white;
+  height:100vh;
+  padding: 20px;
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
+}
+
+#bookCover{
+  height: 100vh;
+   -vendor-animation-delay: 2s;
+  background-image: url(img/ADrunkInTheWoods.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*
+
+   CONTACT SECTION CSS STARTS HERE
+
+*/
+#contactInfo{
+  /*height:85vh;*/
+  background-color: white;
+  height:100vh;
+  padding: 20px;
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
+}
+
+#contactCover{
+  height: 100vh;
+   -vendor-animation-delay: 2s;
+  background-image: url(img/selftiles.png);
+  background-position: center center;
   background-repeat: no-repeat;
 }

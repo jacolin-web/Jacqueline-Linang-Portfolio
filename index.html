@@ -5,8 +5,11 @@
 <head>
   <title>Jacqueline Linang's Website</title>
   <meta charset="utf-8">
-  <!-- Font Dependencies -->
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway" rel="stylesheet">
+  <!-- Font Dependencies
+    Credits to https://www.behance.net/hendra_maulia for Befolk.
+    Bebas Neue and Champagne & Limousines
+  -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
   <!-- CSS Dependencies -->
   <link rel="stylesheet" href="lib/animate.css">
@@ -22,41 +25,6 @@
   <!-- CONTAINER BEGINS  -->
   <!-- <div class="container"> -->
     <!-- NAVIGATION BEGINS -->
-    <nav id="nav" class="navbar is-pulled-right fade-hide">
-      <div class="navbar-burger burger" data-target="navMenuExample">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <!-- <div class="navbar-menu">
-        <div class="navbar-brand">
-          <a href="index.html"><img id="logoPNG" src="img/brand-logo.png" /></a>
-          <aside class="menu">
-            <ul class="menu-list">
-              <div id="navanimate" onmouseover="animateNav(this)">
-                <a href="/index.html"><img id="logoPNG" class="navLogos" src="img/brand-logo.png"/></a>
-              </div>
-              <li id="navanimate" onmouseover="animateNav(this)">
-                <a href="index.html"><object id="aboutNav" class="navLogos" data="icons/svg/008-girl-with-laptop.svg" type="image/svg+xml"></object></a>
-              </li>
-              <li id="navanimate" onmouseover="animateNav(this)">
-                <a href="index.html"><object id="workNav" class="navLogos" data="icons/svg/019-briefcase.svg" type="image/svg+xml"></object></a>
-              </li>
-              <li id="navanimate" onmouseover="animateNav(this)">
-                <a href="index.html"><object id="bookNav" class="navLogos" data="icons/svg/016-notebook.svg" type="image/svg+xml"></object></a>
-              </li>
-              <li id="navanimate" onmouseover="animateNav(this)">
-                <a href="index.html"><object id="activityNav" class="navLogos" data="icons/svg/003-social.svg" type="image/svg+xml"></object></a>
-              </li>
-              <li id="navanimate" onmouseover="animateNav(this)">
-                <a href="index.html"><object id="contactNav" class="navLogos" data="icons/svg/002-contact.svg" type="image/svg+xml"></object></a>
-              </li>
-            </ul>
-          </aside>
-        </div>
-      </div> -->
-    </nav><!-- End of Navigation  -->
 
     <!-- START LOGO BEGINS -->
     <div class="columns is-centered">
@@ -89,46 +57,181 @@
       </div>
     </div>
 
+<div id="content" class="fade-hide">
+
     <!-- ABOUT SECTION BEGINS -->
-    <section id="aboutSection" class="hero fade-hide is-fullheight">
+    <section id="aboutSection" class="hero is-fullheight">
       <div class="columns is-gapless is-desktop is-vcentered">
-        <div id="aboutCover" onmouseover="animateNav(this)" class="column is-hidden-mobile">
+        <div id="aboutCover" class="column is-hidden-mobile">
           <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
           <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
 
         </div><!-- End of SVG column -->
 
-        <div id="about-info" class="column is-half-desktop">
-          <text class="" transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:67px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">j</text><text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:55px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">acqueline</text><p>
+        <div id="aboutInfo" class="column is-half-desktop">
+          <h1 class="lg">j</h1><h1>acqueline</h1>
+          <p>
             is a <a>student,</a><br />
               working to become a better front-end developer,<br/> and eventually full-stack.<br/></br/>
               <a>Reach me here</a>
           </p>
-        </div><!-- End of about info div -->
+        </div><!-- End of aboutInfo div -->
       </div>
     <!-- </div> -->
     </section><!-- End of about-section -->
 
     <!-- EDUCATION BEGINS -->
-    <section id="schoolSection" class="hero fade-hide is-fullheight">
+    <section id="schoolSection" class="hero is-fullheight">
       <div class="columns is-gapless is-vcentered">
-        <div id="schoolCover" onclick="animateNav(this)" class="column">
+      <div id="schoolCover" data-aos="zoom-in-right" onclick="animateNav(this)" class="column">
+        <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
+        <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
+
+      </div><!-- End of SVG column -->
+
+      <div id="schoolInfo" class="column is-half-desktop">
+        <!-- <h1>Relevant Coursework</h1> -->
+          <h2>Stony Brook University</h2>
+          <p>
+          <center>
+          Computer Programming III</br>
+          Human-Computer Interaction</br>
+          Intro to Multimedia Systems</br>
+          Fundamentals of IT</br>
+          UI Development</br>
+          Digital Arts:Web Design & Culture</br>
+          Database Design and Practice</br>
+          </center>
+          </p>
+          <h2>Weschester Community College</h2>
+              <p><center>Computer Programming I & II </br>
+                Unix/Linux Systems </br>
+                Web Programming </br>
+                Data Structures </br>
+                Java Programming </br>
+                Discrete Math </br>
+                GUI Development </br>
+                Computer Architecture </br></center>
+              </p></br>
+          </div><!-- End of educationInfo div -->
+      </div>
+    <!-- </div> -->
+    </section><!-- End of education section -->
+
+    <!-- EXPERIENCE BEGINS -->
+    <section id="workSection" class="hero is-fullheight">
+      <div class="columns is-gapless is-vcentered">
+        <div id="workCover" data-aos="fade-right" onclick="animateNav(this)" class="column">
           <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
           <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
 
         </div><!-- End of SVG column -->
 
-        <div id="school-info" class="column is-half-desktop">
-          <text class="" transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:67px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">j</text><text transform="translate(-55,145)rotate(-44)" style="font-family:'Befolk-Regular', 'Befolk ';font-size:55px;fill:#fff;" dx="2.5em" text-anchor="middle" y="2.5em" dy="1em">acqueline</text><p>
-            is a <a>student,</a><br />
-              working to become a better front-end developer,<br/> and eventually full-stack.<br/></br/>
-              <a>Reach me here</a>
-          </p>
-        </div><!-- End of about info div -->
+        <div id="workInfo" class="column is-half-desktop">
+          <!-- <h1>Relevant Coursework</h1> -->
+            <h2>Stony Brook University</h2>
+            <p>
+            <center>
+            Computer Programming III</br>
+            Human-Computer Interaction</br>
+            Intro to Multimedia Systems</br>
+            Fundamentals of IT</br>
+            UI Development</br>
+            Digital Arts:Web Design & Culture</br>
+            Database Design and Practice</br>
+            </center>
+            </p>
+            <h2>Weschester Community College</h2>
+                <p><center>Computer Programming I & II </br>
+                  Unix/Linux Systems </br>
+                  Web Programming </br>
+                  Data Structures </br>
+                  Java Programming </br>
+                  Discrete Math </br>
+                  GUI Development </br>
+                  Computer Architecture </br></center>
+                </p></br>
+        </div><!-- End of experienceInfo div -->
       </div>
     <!-- </div> -->
-    </section><!-- End of about-section -->
+    </section><!-- End of experience section -->
 
+    <!-- BOOK BEGINS -->
+    <section id="bookSection" class="hero is-fullheight">
+      <div class="columns is-gapless is-vcentered">
+        <div id="bookCover" data-aos="fade-right" onclick="animateNav(this)" class="column">
+          <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
+          <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
+
+        </div><!-- End of SVG column -->
+
+        <div id="bookInfo" class="column is-half-desktop">
+          <!-- <h1>Relevant Coursework</h1> -->
+            <h2>Stony Brook University</h2>
+            <p>
+            <center>
+            Computer Programming III</br>
+            Human-Computer Interaction</br>
+            Intro to Multimedia Systems</br>
+            Fundamentals of IT</br>
+            UI Development</br>
+            Digital Arts:Web Design & Culture</br>
+            Database Design and Practice</br>
+            </center>
+            </p>
+            <h2>Weschester Community College</h2>
+                <p><center>Computer Programming I & II </br>
+                  Unix/Linux Systems </br>
+                  Web Programming </br>
+                  Data Structures </br>
+                  Java Programming </br>
+                  Discrete Math </br>
+                  GUI Development </br>
+                  Computer Architecture </br></center>
+                </p></br>
+        </div><!-- End of bookInfo div -->
+      </div>
+    <!-- </div> -->
+    </section><!-- End of book section -->
+
+    <!-- CONTACT BEGINS -->
+    <section id="contactSection" class="hero is-fullheight">
+      <div class="columns is-gapless is-vcentered">
+        <div id="contactCover" data-aos="fade-right" onclick="animateNav(this)" class="column">
+          <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
+          <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
+
+        </div><!-- End of SVG column -->
+
+        <div id="contactInfo" class="column is-half-desktop">
+          <!-- <h1>Relevant Coursework</h1> -->
+            <h2>Stony Brook University</h2>
+            <p>
+            <center>
+            Computer Programming III</br>
+            Human-Computer Interaction</br>
+            Intro to Multimedia Systems</br>
+            Fundamentals of IT</br>
+            UI Development</br>
+            Digital Arts:Web Design & Culture</br>
+            Database Design and Practice</br>
+            </center>
+            </p>
+            <h2>Weschester Community College</h2>
+                <p><center>Computer Programming I & II </br>
+                  Unix/Linux Systems </br>
+                  Web Programming </br>
+                  Data Structures </br>
+                  Java Programming </br>
+                  Discrete Math </br>
+                  GUI Development </br>
+                  Computer Architecture </br></center>
+                </p></br>
+        </div><!-- End of contactInfo div -->
+      </div>
+    <!-- </div> -->
+    </section><!-- End of contact section -->
+</div>
 </header>
 </body>
 </html>
