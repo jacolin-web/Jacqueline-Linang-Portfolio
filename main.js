@@ -77,8 +77,12 @@ function hideStart(){
     // console.log($("#aboutCover").addClass("animated fadeInLeft"));
 }
 
-function info(){
+function nextTimeline(){
   $("#activityInfo").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
   $("#activitySecondaryInfo").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
+}
 
+function returnTimeline(){
+  $("#activitySecondaryInfo").switchClass( "fade-show", "fade-hide", 1000, "easeInOutQuad" );
+  $("#activityInfo").switchClass( "fade-hide", "fade-show", 1000, "easeInOutQuad" );
 }
