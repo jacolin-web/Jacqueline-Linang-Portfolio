@@ -171,6 +171,11 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 */
 
+#schoolInfo{
+  background-color: #141414;
+  color: white;
+}
+
 #schoolCover{
   background-image: url(img/switches.gif);
 }
@@ -192,9 +197,15 @@ svg:hover #glowLeft, svg:hover  #glowRight{
 
 */
 
+#activityInfo, #activitySecondaryInfo{
+  background-image: url(img/activityCover.png);
+  background-position: left center;
+}
+
 #activityCover{
   background-image: url(img/jacofhearts.gif);
   background-position: center center;
+
 }
 
 /*
