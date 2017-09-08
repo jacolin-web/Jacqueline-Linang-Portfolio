@@ -125,6 +125,15 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   stroke-width: 7px;
 }
 
+svg{
+  fill: #fff;
+}
+
+svg.icon:hover{
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
 
 .fade-hide{
   position:absolute;
@@ -162,9 +171,35 @@ svg:hover #glowLeft, svg:hover  #glowRight{
   background-repeat: no-repeat;
 }
 
+/*
+
+  EXTRA INFO CSS STARTS HERE
+
+*/
+
+
+#codeInfoLeft{
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+}
+
+#codeInfoRight{
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+/*
+
+  ABOUT SECTION CSS STARTS HERE
+
+*/
+
 #aboutCover{
   background-image: url(img/about-pic.jpg);
 }
+
 /*
 
   SCHOOL SECTION CSS STARTS HERE
