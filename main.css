@@ -130,13 +130,15 @@ svg{
   transition: .4s;
 }
 
-svg.icon:hover{
-  height: 3.2rem; width: 3.2rem;
+svg.icon circle:hover{
+  /*r: "1.5rem";
+  cx: "25";
+  cy: "25";
+  transform: scale(2,2);*/
 }
 
-@keyframes svgIcons {
-  0%   {height: 3rem; width: 3rem;}
-  100% {height: 3.2rem; width: 3.2rem;}
+svg.icon:hover{
+  height: 3.2rem; width: 3.2rem;
 }
 
 .fade-hide{
@@ -195,8 +197,8 @@ svg.icon:hover{
 }
 
 .coverTitles{
-  height: 45vh;
   position: absolute;
+  display: flex;
   align-self: center;
   bottom: 5%;
 
