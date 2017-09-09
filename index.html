@@ -250,7 +250,7 @@
     <!-- NAVIGATION BEGINS -->
     <!-- START LOGO BEGINS -->
     <div class="columns is-centered">
-      <div id="logoSVG" class="column is-half fade-show" onclick="hideStart()" >
+      <div id="logoSVG" class="column is-half fade-show" ="hideStart()" >
         <svg
           width="100%"
           height="100%"
@@ -284,7 +284,9 @@
       <!-- ABOUT SECTION BEGINS -->
       <section id="aboutSection" class="hero is-fullheight">
         <div class="columns is-gapless is-desktop is-vcentered">
-          <div id="aboutCover" class="column is-hidden-mobile">
+          <div id="aboutCover" class="column is-half-desktop">
+            <img class="coverTitles" src="img/aboutme.png" />
+
             <!-- <img style="width=400px;" src="img/mirrored-pic.png" /> -->
             <!-- <object id="aboutNav" class="navLogos" data="img/about.svg" type="image/svg+xml"> -->
 
@@ -329,7 +331,7 @@
         <div class="columns is-gapless is-vcentered">
         <div id="schoolInfo" class="column is-half-desktop">
           <!-- <h1>Relevant Coursework</h1> -->
-            <h2>Stony Brook University</h2>
+            <h2 class="has-text-centered">Stony Brook University</h2>
             <p>
             <center>
             Computer Programming III</br>
@@ -341,7 +343,8 @@
             Database Design and Practice</br>
             </center>
             </p>
-            <h2>Weschester Community College</h2>
+              </br/></br/>
+            <h2 class="has-text-centered">Weschester Community College</h2>
                 <p><center>Computer Programming I & II </br>
                   Unix/Linux Systems </br>
                   Web Programming </br>
@@ -358,7 +361,8 @@
               The yellow bus is red
             </div><!-- End of educationInfo div -->
 
-            <div id="schoolCover" data-aos="zoom-in-right" data-aos-anchor="#aboutSection" onclick="animateNav(this)" class="column">
+            <div id="schoolCover" data-aos="zoom-in-right" data-aos-anchor="#aboutSection" class="column">
+              <img class="coverTitles" src="img/education.png" />
               <span id="codeInfoRight" class="icon is-large">
                 <svg class="icon">
                   <use xlink:href="#web" />
@@ -372,7 +376,8 @@
       <!-- EXPERIENCE BEGINS -->
       <section id="workSection" class="hero is-fullheight">
         <div class="columns is-gapless is-vcentered">
-          <div id="workCover" data-aos="fade-right" data-aos-anchor="#schoolSection" onclick="animateNav(this)" class="column">
+          <div id="workCover" data-aos="fade-right" data-aos-anchor="#schoolSection" class="column">
+            <img class="coverTitles" src="img/experience.png" />
             <span id="codeInfoLeft" class="icon is-large">
               <svg class="icon">
                 <use xlink:href="#web" />
@@ -501,7 +506,8 @@
               </li>
             </ul>
           </div>
-          <div id="activityCover" data-aos="fade-right" data-aos-anchor="#workSection" onclick="animateNav(this)" class="column">
+          <div id="activityCover" data-aos="fade-right" data-aos-anchor="#workSection" class="column">
+            <img class="coverTitles" src="img/experience.png" />
             <span id="codeInfoRight" class="icon is-large">
               <svg class="icon">
                 <use xlink:href="#web" />
@@ -515,7 +521,8 @@
       <!-- CONTACT BEGINS -->
       <section id="contactSection" class="hero is-fullheight">
         <div class="columns is-gapless is-vcentered">
-          <div id="contactCover" data-aos="fade-right" data-aos-anchor="#activitySection"  onclick="animateNav(this)" class="column">
+          <div id="contactCover" data-aos="fade-right" data-aos-anchor="#activitySection" class="column">
+            <img class="coverTitles" src="img/contact.png" />
             <span id="codeInfoLeft" class="icon is-large">
               <svg class="icon">
                 <use xlink:href="#web" />
