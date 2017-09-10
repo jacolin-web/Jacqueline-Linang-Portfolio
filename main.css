@@ -196,13 +196,22 @@ svg.icon:hover{
   bottom: 5%;
 }
 
-.coverTitles{
+#aboutTitle, .coverTitles{
+  max-width: 100%;
+  height: auto;
   position: absolute;
-  display: flex;
-  align-self: center;
   bottom: 5%;
-
+  /*width: 75%;*/
 }
+
+#aboutTitle{
+  width: 40%;
+}
+
+.coverTitles{
+  width: 75%;
+}
+
 /*
 
   ABOUT SECTION CSS STARTS HERE
