@@ -148,6 +148,7 @@ svg.icon:hover{
 }
 
 .fade-show{
+  height: 100vh;
   position:static;
   visibility: visible;
   opacity: 1;

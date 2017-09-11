@@ -1,7 +1,6 @@
 $tag-background-color: $background !default
 $tag-color: $text !default
 $tag-radius: $radius !default
-$tag-delete-margin: 1px !default
 
 .tags
   align-items: center
@@ -26,7 +25,7 @@ $tag-delete-margin: 1px !default
         border-bottom-right-radius: 0
         border-top-right-radius: 0
 
-.tag:not(body)
+.tag
   align-items: center
   background-color: $tag-background-color
   border-radius: $tag-radius
@@ -56,7 +55,7 @@ $tag-delete-margin: 1px !default
     font-size: $size-medium
   // Modifiers
   &.is-delete
-    margin-left: $tag-delete-margin
+    margin-left: 1px
     padding: 0
     position: relative
     width: 2em
