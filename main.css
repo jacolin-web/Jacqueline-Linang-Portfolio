@@ -48,15 +48,15 @@ html.start{
   overflow-y: hidden !important;
 }
 
-body.gradient{
-    background: red;
-    background: -webkit-linear-gradient(#91A8D0, #F7CAC9);
-    background: -o-linear-gradient(#91A8D0, #F7CAC9);
-    background: -moz-linear-gradient(#91A8D0, #F7CAC9);
-    background: linear-gradient(#91A8D0, #F7CAC9);
-    /*overflow-y: hidden;*/
-}
+/* #startBackdrop{
+  background-image: url(img/MALADIVA.png);
+} */
 
+body.Q12018{
+    background-image: url(img/MALAVIDA.png);
+    /* background-repeat: no-repeat; */
+    overflow-y: hidden;
+}
 /*
 
   CUSTOMIZED CSS FOR NAV BAR
@@ -98,9 +98,9 @@ body.gradient{
 }*/
 
 p{
-  font-size:50px;
-  line-height: 3rem;
-  /*font-family: 'Raleway', sans-serif;*/
+  font-size:1.5rem;
+  /* line-height: 3rem; */
+  font-family: Arial, sans-serif;
 }
 
 .columns.is-gapless > .column {
@@ -138,7 +138,8 @@ svg.icon circle:hover{
 }
 
 svg.icon:hover{
-  height: 3.2rem; width: 3.2rem;
+  height: 3.2rem;
+  width: 3.2rem;
 }
 
 .fade-hide{
@@ -161,118 +162,59 @@ svg.icon:hover{
   background-color: white;
 }
 
-/*
+#content{
+  overflow-y: hidden;
+}
 
-  SECTION CSS STARTS HERE
+.hero-body{
+  padding: 0px !important;
+}
 
-*/
-#aboutInfo, #schoolInfo, #workInfo, #activityInfo, #contactInfo{
+.container{
+  padding: 2rem !important;
   background-color: white;
-  height:100vh;
-  padding: 3rem;
+  width: 100%;
+  height: 85%;
+  margin: 3rem !important;
 }
 
-#aboutCover, #schoolCover, #workCover, #activityCover, #contactCover{
-  height: 100vh;
-  background-position: left center;
-  background-repeat: no-repeat;
+.centered{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 25%; */
+  width: 50%;
 }
 
-/*
+/* MOBILE CSS STARTS HERE */
+@media only screen and (max-width: 980px){
+  body.Q12018{
+      background-image: url(img/MALAVIDA-portrait.png);
+      /* background-repeat: no-repeat; */
+      overflow-y: hidden;
+  }
 
-  EXTRA INFO CSS STARTS HERE
-
-*/
-
-
-#codeInfoLeft{
-  position: absolute;
-  left: 5%;
-  bottom: 5%;
+  .centered{
+    width: 35%;
+  }
 }
 
-#codeInfoRight{
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
+@media(max-width: 1580px) {
+  p{
+    font-size: 18px;
+  }
+  .unbehaved-element {
+    font-size: 1.9em; /* Fine tune unbehaved elements */
+  }
+}
+@media(max-width: 980px) {
+  p{
+    font-size: 16px;
+  }
 }
 
-#aboutTitle, .coverTitles{
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: 5%;
-  /*width: 75%;*/
-}
-
-#aboutTitle{
-  width: 40%;
-}
-
-.coverTitles{
-  width: 75%;
-}
-
-/*
-
-  ABOUT SECTION CSS STARTS HERE
-
-*/
-
-#aboutCover{
-  background-image: url(img/about-pic.jpg);
-}
-
-/*
-
-  SCHOOL SECTION CSS STARTS HERE
-
-*/
-
-#schoolInfo{
-  background-color: #141414;
-  color: white;
-}
-
-#schoolCover{
-  background-image: url(img/switches.gif);
-}
-
-/*
-
-  WORK SECTION CSS STARTS HERE
-
-*/
-
-#workCover{
-  background-image: url(img/moodwave.gif);
-  background-position: center center;
-}
-
-/*
-
-   ACTIVITY SECTION CSS STARTS HERE
-
-*/
-
-#activityInfo, #activitySecondaryInfo{
-  background-image: url(img/activityCover.png);
-  background-position: left center;
-}
-
-#activityCover{
-  background-image: url(img/jacofhearts.gif);
-  background-position: center center;
-
-}
-
-/*
-
-   CONTACT SECTION CSS STARTS HERE
-
-*/
-
-#contactCover{
-  background-image: url(img/selfietiles.png);
-  background-position: center center;
+@media(max-width: 520px) {
+  p{
+    font-size: 14px;
+  }
 }
