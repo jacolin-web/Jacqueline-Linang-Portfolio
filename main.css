@@ -118,7 +118,7 @@ a{
 @media only screen and (max-width: 980px){
 
   .about{
-    max-width: 150px !important; /* width of container */
+    max-width: 150px; /* width of container */
     max-height: 150px; /* height of container */
     object-fit: cover;
   }
