@@ -28,7 +28,6 @@ Bebas Neue
 
 h1.lg{
   display:inline;
-  float:left;
   font-family: Befolk;
   font-size: 62px;
 }
@@ -52,53 +51,24 @@ html.start{
   background-image: url(img/MALADIVA.png);
 } */
 
-body.Q12018{
-    background-image: url(img/MALAVIDA.png);
-    /* background-repeat: no-repeat; */
-    overflow-y: hidden;
-}
-/*
-
-  CUSTOMIZED CSS FOR NAV BAR
-
-*/
-.navbar{
-  /*margin-left: 230px !important;*/
-  /*position:fixed !important;*/
-  background-color: transparent !important;
+body.Q32020{
+  background-image: url(img/brandpic.png);
+  /* background-repeat: no-repeat; */
+  overflow-y: hidden;
 }
 
-.nav-svg{
-  width: 200px !important;
+.about{
+  border-radius: 50%;
+  width: 350px !important; /* width of container */
+  height: 350px; /* height of container */
+  object-fit: cover;
 }
 
-.navbar-menu{
-  /*position: fixed*/
-  margin-top: 1.5rem;
+.resume{
+  color: #363636;
 }
-
-/*
-
-  NAV BAR ICONS CSS
-
-*/
-
-.menu-list a:hover{
-  background-color: transparent !important;
-}
-
-.navLogos{
-  width: 50px;
-  height: 40px;
-  margin: .5rem 1rem;
-}
-
-/*#laptopGirl svg path{
-  fill: #fff;
-}*/
 
 p{
-  font-size:1.5rem;
   /* line-height: 3rem; */
   font-family: Arial, sans-serif;
 }
@@ -109,57 +79,6 @@ p{
 
 .button.is-primary{
   float: right !important;
-}
-
-svg:hover #glowLeft, svg:hover  #glowRight{
-  stroke: white;
-  filter: url(#blur-filter);
-}
-
-#JL{
-  display: none;
-  filter: url(#blur-filter);
-}
-
-#JL svg:hover path{
-  stroke-width: 7px;
-}
-
-svg{
-  fill: #fff;
-  transition: .4s;
-}
-
-svg.icon circle:hover{
-  /*r: "1.5rem";
-  cx: "25";
-  cy: "25";
-  transform: scale(2,2);*/
-}
-
-svg.icon:hover{
-  height: 3.2rem;
-  width: 3.2rem;
-}
-
-.fade-hide{
-  position:absolute;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.fade-show{
-  height: 100vh;
-  position:static;
-  visibility: visible;
-  opacity: 1;
-}
-
-.fade-info{
-  position:static;
-  visibility: visible;
-  opacity: 1;
-  background-color: white;
 }
 
 #content{
@@ -186,10 +105,27 @@ svg.icon:hover{
   width: 50%;
 }
 
+.nav-links{
+  margin-top: -1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+a{
+  color: #CA9CEE;
+}
+
 /* MOBILE CSS STARTS HERE */
 @media only screen and (max-width: 980px){
-  body.Q12018{
-      background-image: url(img/MALAVIDA-portrait.png);
+
+  .about{
+    max-width: 150px !important; /* width of container */
+    max-height: 150px; /* height of container */
+    object-fit: cover;
+  }
+
+  
+  body.Q32020{
+      background-image: url(img/brandpic-portrait.png);
       /* background-repeat: no-repeat; */
       overflow-y: hidden;
   }
@@ -201,20 +137,34 @@ svg.icon:hover{
 
 @media(max-width: 1580px) {
   p{
-    font-size: 18px;
+    font-size: 16px;
   }
   .unbehaved-element {
     font-size: 1.9em; /* Fine tune unbehaved elements */
   }
 }
 @media(max-width: 980px) {
+  h1.title{
+    font-size: 28px;
+  }
+
+  h2.subtitle{
+    font-size: 22px;
+  }
   p{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media(max-width: 520px) {
+  h1.title{
+    font-size: 20px;
+  }
+
+  h2.subtitle{
+    font-size: 18px;
+  }
   p{
-    font-size: 14px;
+    font-size: 12px;
   }
 }
