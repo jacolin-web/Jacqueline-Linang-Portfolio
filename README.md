@@ -8,6 +8,9 @@ Font credit to: https://type-department.com/collections/serif-fonts/products/rom
 <br>
 (Purchased web-license) 
 
+<br>
+<br>
+
 CSS Library used were:
 <br>
 https://bulma.io/
