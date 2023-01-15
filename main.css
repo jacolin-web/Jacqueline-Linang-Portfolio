@@ -49,6 +49,10 @@ h2{
   color: black;
 }
 
+.column-nav{
+  height: 100px;
+}
+
 .navigation{
   /* display:inline; */
   font-family: 'Montserrat', sans-serif;
@@ -59,7 +63,6 @@ h2{
   text-align: center;
   top: -120px;
   position: relative;
-  height: 50px;
 }
 
 body.Q12023{
@@ -67,7 +70,6 @@ body.Q12023{
   linear-gradient(180deg, #9C6FC0 0%, rgba(156, 111, 192, 0) 100%);
   overflow-y: hidden;
 }
-
 
 .purplewave{
   background-image: url(img/purplewave.png);
@@ -139,6 +141,10 @@ body.Q12023{
 
 #projects-section{
   display: none;
+}
+
+.selected-nav{
+  color: #F7D7CD;
 }
 
 p{
@@ -237,6 +243,10 @@ a:hover{
   }
   p{
     font-size: 12px;
+  }
+
+  .column-nav{
+    height: 150px;
   }
   
   .navigation {
