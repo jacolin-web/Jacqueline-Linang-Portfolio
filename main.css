@@ -1,100 +1,156 @@
-/*
+/** Web License purchased from 
 
-LOAD FONTS:
-Befolk,
-Bebas Neue
+https://type-department.com/collections/serif-fonts/products/roma-serif/ 
 
-*/
-
+**/
 @font-face {
-  /*
-  Credits completely go to
-  https://www.behance.net/hendra_maulia
-
-  */
-  font-family: Befolk;
-  src: url(fonts/BefolkScript.ttf);
+  font-family: Roma;
+  src: url(fonts/Roma.otf);
 }
 
-@font-face {
-  /*
-  Credits completely go to
-  https://www.behance.net/hendra_maulia
-
-  */
-  font-family: Bebas Neue;
-  src: url(fonts/BebasNeueRegular.otf);
+html {
+  height: 100%;
+  margin: auto;
+  width: 100%;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
 }
 
-h1.lg{
-  display:inline;
-  font-family: Befolk;
-  font-size: 62px;
+.columns{
+  margin-top: -4.75rem;
+}
+
+.name-title{
+  /* display:inline; */
+  font-family: Roma;
+  font-size: 125px;
+  line-height: 250px;
+  letter-spacing: -0.045em;
+  color: black;
+  text-align: center;
+  height: 150px;
+}
+
+.title-height{
+  height: 150px
 }
 
 h1{
-  font-family: Befolk;
+  font-family: Roma;
   font-size: 50px;
+  color: black;
 }
 
 h2{
-  font-family: Bebas Neue;
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold; 
+  font-weight: 700;
   font-size: 20px;
+  color: black;
 }
 
-
-html.start{
-  overflow-y: hidden !important;
+.navigation{
+  /* display:inline; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  line-height: 250px;
+  letter-spacing: -0.045em;
+  color: black;
+  text-align: center;
+  top: -120px;
+  position: relative;
+  height: 50px;
 }
 
-/* #startBackdrop{
-  background-image: url(img/MALADIVA.png);
-} */
-
-body.Q32020{
-  background-image: url(img/brandpic.png);
-  /* background-repeat: no-repeat; */
+body.Q12023{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), 
+  linear-gradient(180deg, #9C6FC0 0%, rgba(156, 111, 192, 0) 100%);
   overflow-y: hidden;
+}
+
+
+.purplewave{
+  background-image: url(img/purplewave.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.pinklines{
+  background-image: url(img/pinklines.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: top;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.goldsparkles{
+  background-image: url(img/goldsparkles.png);
+  background-repeat: repeat;
+  position: absolute;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.onewhitefloral{
+  background-image: url(img/onewhitefloral.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: bottom right;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.bubble{
+  background: #FFFFFF;
+  border-radius: 100px;
 }
 
 .about{
-  border-radius: 50%;
-  width: 350px !important; /* width of container */
-  height: 350px; /* height of container */
+  width: 500px !important; /* width of container */
+  height: 500px; /* height of container */
   object-fit: cover;
 }
 
-.resume{
-  color: #363636;
+.about-section{
+  display: block;
+}
+
+.section-text{
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 200px;
+}
+
+#values-section{
+  display: none;
+}
+
+#experience-section{
+  display: none;
+}
+
+#projects-section{
+  display: none;
 }
 
 p{
-  /* line-height: 3rem; */
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.columns.is-gapless > .column {
-  padding: 3rem !important;
+a, i, b{
+  color: black;
 }
 
-.button.is-primary{
-  float: right !important;
-}
-
-#content{
-  overflow-y: hidden;
-}
-
-.hero-body{
-  padding: 0px !important;
-}
-
-.container{
-  padding: 2rem !important;
-  background-color: white;
-  width: 100%;
-  height: 85%;
-  margin: 3rem !important;
+a:hover{
+  color: #F7D7CD;
 }
 
 .centered{
@@ -110,24 +166,20 @@ p{
   margin-bottom: 1.5rem !important;
 }
 
-a{
-  color: #CA9CEE;
-}
 
 /* MOBILE CSS STARTS HERE */
 @media only screen and (max-width: 980px){
 
   .about{
-    max-width: 150px; /* width of container */
-    max-height: 150px; /* height of container */
+    max-width: 250px; /* width of container */
+    max-height: 250px; /* height of container */
     object-fit: cover;
   }
-
   
   body.Q32020{
       background-image: url(img/brandpic-portrait.png);
       /* background-repeat: no-repeat; */
-      overflow-y: hidden;
+      /* overflow-y: hidden; */
   }
 
   .centered{
@@ -143,9 +195,9 @@ a{
     font-size: 1.9em; /* Fine tune unbehaved elements */
   }
 }
-@media(max-width: 980px) {
-  h1.title{
-    font-size: 28px;
+@media(max-width: 990px) {
+  .name-title{
+    font-size: 80px;
   }
 
   h2.subtitle{
@@ -154,11 +206,67 @@ a{
   p{
     font-size: 14px;
   }
+
+  .container{
+    height: 500px;
+  }
 }
 
-@media(max-width: 520px) {
-  h1.title{
-    font-size: 20px;
+@media(max-width: 625px) {
+  .name-title{
+    font-size: 60px;
+  }
+
+  h2.subtitle{
+    font-size: 18px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 490px) {
+  .name-title{
+    font-size: 50px;
+    line-height: 200px;
+    height: 40px;
+  }
+
+  h2.subtitle{
+    font-size: 18px;
+  }
+  p{
+    font-size: 12px;
+  }
+  
+  .navigation {
+    font-size: 15px! important;
+    top: -60px;
+    height: 80px;
+  }
+  
+  .container{
+    height: 710px;
+  }
+
+}
+
+@media(max-width: 410px) {
+  .name-title{
+    font-size: 40px;
+  }
+
+  h2.subtitle{
+    font-size: 18px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+
+@media(max-width: 330px) {
+  .name-title{
+    font-size: 30px;
   }
 
   h2.subtitle{
