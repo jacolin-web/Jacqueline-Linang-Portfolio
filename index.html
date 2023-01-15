@@ -2,70 +2,186 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!DOCTYPE html>
+
 <head>
   <title>Jacqueline Linang's Website</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
-  <!-- Font Dependencies
-    Credits to https://www.behance.net/hendra_maulia for Befolk.
-    Bebas Neue and Champagne & Limousines
-  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   <!-- CSS Dependencies -->
   <link rel="stylesheet" href="main.css">
-
-  <!-- Icons -->
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-</head>
-<body class="Q32020">
-    <!-- SVG COLLECTION LIBRARY BEGINS -->
   
-
-    <div id="content" class="columns is-centered">
-      <div class="column is-11">
-      <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns is-desktop">
-            <div class="column if-half">
-              <div class="aboutPic">
-                <!-- <is-pulled-left has-text-centered"> -->
-                <img class="about centered" src="img/about-me-icon.JPG" />
-              </div>
-            </div>
-            <div class="column">
-              <div class="aboutInfo has-text-centered">
-              <h1 class="title">
-                Jacqueline Linang
-              </h1>
-              <h2 class="subtitle">
-                Front-end Developer
-              </h2>
-              <div class="nav-links">
-                <a href="https://twitter.com/_jacolin" alt="Twitter">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-                <a href="https://www.linkedin.com/in/jlinang/" alt="LinkedIn">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-                <a href="https://github.com/jacolin-web" alt="Github">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>            
-              </div>
-
-              <p>
-                Hi there! I'm currently a Software Engineer at JPMorgan Chase & Co. While pursuing my B.S. degree in Technological Systems Management from Stony Brook University, I've interned at JesseJames Creative, Inc. where I got my first experience with UX Design and Research. Afterwards I've interned twice at JPMorgan Chase & Co. where I worked front-end on various projects. Besides working with React, Typescript, CSS and Java, I love illustrating and kitchen witch stuff.
-              </p>
-              <a href="img/Jacqueline_Linang_Resume.pdf" target="_blank" class="resume" alt="Resume">
-                <ion-icon name="heart"></ion-icon>
-              </a>
-              </div><!-- end of aboutInfo -->
-            </div>
-          </div>
+</head>    
+<div class="onewhitefloral"/>
+<div class="goldsparkles"/>
+<body class="Q12023">
+  <div class="pinklines"/>
+  <div class="purplewave"/>
+  <div class="columns is-desktop is-multiline is-centered">
+    <div class="column is-full">
+      <div class="name-title">
+        <div class="has-text-centered">
+          Jacqueline Linang
         </div>
       </div>
-      </section>
     </div>
+    <div class="column is-full">
+      <div class="navigation"> 
+        <div class="has-text-centered">
+          <a onclick="aboutOnClick()">
+            about
+          </a>
+            ✦  
+          <a onclick="valuesOnClick()">
+            values
+          </a>
+            ✦  
+          <a onclick="experienceOnClick()">
+            experience
+          </a>   
+            ✦ 
+          <a onclick="projectsOnClick()">
+            projects
+          </a>  
+        </div>
+      </div>
     </div>
-
+  </div>
+  <!-- ABOUT SECTION START -->
+  <div id="about-section" class="columns is-two-thirds-desktop is-centered pt-6 is-vcentered">
+    <div class="column is-two-fifths">
+      <img class="about centered" src="img/persona.png" />
+    </div>
+    <div class="column is-half">
+      <div class="bubble has-text-centered">
+        <div class="section-text">
+          <br/>
+          <p>
+            Hey there! I'm a Filipino American <b><a onclick="experienceOnClick()">Front-end Engineer</a></b> currently located in Jersey City.
+            I have a passion for <b><a onclick="valuesOnClick()">human-computer interaction and design</a></b>. 
+            Besides learning about new technologies, CSS animations and making games with WebGL, I'm also a big cinephile, journal-junkie and a  <b><a onclick="projectsOnClick()">kitchen witch</a></b>.
+            
+            <br/>
+            Feel free to connect
+          </p>
+        </div>
+        <br/>
+        <div class="nav-links">
+          <h2>
+          <a href="mailto: jlinang3@gmail.com" alt="Email">
+            <ion-icon name="mail"></ion-icon>
+          </a>
+          <a href="https://www.linkedin.com/in/jlinang/" alt="LinkedIn">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/jacolin-web" alt="Github">
+            <ion-icon name="logo-github"></ion-icon>
+          </a> 
+          <a href="https://letterboxd.com/magicalmorena/" alt="Github">
+            <ion-icon name="film-outline"></ion-icon>
+          </a>           
+          </h2>    
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT SECTION END -->
+  <!-- VALUES SECTION START -->
+  <div id="values-section" class="columns is-centered is-desktop pt-6 px-6">
+    <div class="column is-three-quarters">
+      <div class="bubble">
+        <div class="section-text" style="padding-top: 10px; padding-bottom: 25px">
+          <h1>Personal Core Values</h1>
+          <p>As an engineer, these are my three core values that motivate me:</p>
+          <br/>
+          <h2><ion-icon name="color-palette"></ion-icon> Design </h2>
+          <p>I am deeply passionate about art and design, I have a strong interest in graphic, brand and product design.
+            One of my design philosophies is that design should be driven by function and purpose. With my degree in Technology Systems Management, I minored in Information Systems and specialized in Digital Media.
+          </p>
+          <br/>
+          <h2> <ion-icon name="people-circle"></ion-icon> Community </h2>
+          <p>I strong believe in community building in whatever space that I am in. As a Filipino American, I strive for spaces that are diverse and inclusive.</p>
+          <br/>
+          <h2> <ion-icon name="book"></ion-icon> Learning </h2>
+          <p>I believe my greatest strength is my eagerness to learn. As an engineer, I love learning new technologies (currently I am learning Electron and WebGL). Outside of that, I love learning about film, Filipino folklore and spirituality, art history, human psychology and sociology.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- VALUES SECTION START -->
+  <!-- EXPERIENCE SECTION START -->
+  <div id="experience-section" class="columns is-centered is-desktop pt-6 px-6 ">
+    <div class="column is-three-quarters">
+      <div class="bubble">
+        <div class="section-text" style="padding-top: 10px; padding-bottom: 25px">
+          <h1>Previous Experiences</h1>
+          <p>With about <b>five years</b> of industry experience, here's a quick overview:</p>
+          <br/>
+          <h2><ion-icon name="flash"></ion-icon> Synop</h2>
+          <p><i>Front-end Engineer</i></p>
+          <p><b>Tech stack:</b> React, Redux, Hooks, RTK Query, TypeScript, Nx, Storybook, AWS </p>
+          <br/>
+          <h2><ion-icon name="card"></ion-icon> JPMorgan Chase & Co</h2>
+          <p><i>Associate Software Engineer</i></p>
+          <p><i>Software Engineer</i></p>
+          <p><i>Software Engineer Intern</i></p>
+          <p><b>Tech stack:</b> React, Redux, Hooks, JavaScript, TypeScript, Java, SQL, CloudFloundry </p>
+          <p>
+            <a href="img/Jacqueline_Linang_Resume.pdf" target="_blank" class="resume" alt="Resume">
+              Full resume download here
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- EXPERIENCE SECTION START -->
+  <!-- PROJECTS SECTION START -->
+  <div id="projects-section" class="columns is-centered is-desktop pt-6 px-6">
+    <div class="column is-three-quarters">
+      <div class="bubble">
+        <div class="section-text" style="padding-top: 10px; padding-bottom: 25px">
+          <h1> Projects</h1>
+          <h2>Cooking Illustrations</h2>
+          <div class="level">
+            <div class="level-item">
+              <figure class="image is-128x128">
+                <img src="img/cooking/IMG_0088.PNG">
+              </figure>
+            </div>
+            <div class="level-item">
+              <figure class="image is-128x128">
+                <img src="img/cooking/IMG_0095.PNG">
+              </figure>
+            </div>
+            <div class="level-item">
+              <figure class="image is-128x128">
+                <img src="img/cooking/IMG_0104.PNG">
+              </figure>
+            </div>
+            <div class="level-item">
+              <figure class="image is-128x128">
+                <img src="img/cooking/IMG_0113.PNG">
+              </figure>
+            </div>
+          </div>
+          <p>This <b><a href="https://www.instagram.com/lutonilinang/">passion project</a></b> is me illustrating and documenting some of my favorite recipes passed to me through family, friends, and the internet.</p>
+          <h2><ion-icon name="game-controller"></ion-icon> Game Jam</h2>
+          <p>Designed and developed a <b><a href="https://thats-my-jam-sage.vercel.app/">React-based game</a></b> for a game jam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PROJECTS SECTION START -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="navigation.js"></script>
 </body>
 </html>
