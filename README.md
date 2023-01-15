@@ -11,7 +11,7 @@ Font credit to: https://type-department.com/collections/serif-fonts/products/rom
 <br>
 <br>
 
-CSS Library used were:
+CSS Libraries used were:
 <br>
 https://bulma.io/
 <br>
