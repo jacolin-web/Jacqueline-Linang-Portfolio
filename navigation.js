@@ -9,13 +9,14 @@ let expNav = document.getElementById("exp-nav");
 let projectsNav = document.getElementById("projects-nav");
 
 function onAboutHover(){
-    aboutNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+    aboutNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse', 'animate__infinite');
 }
 
 function offAboutHover(){
     aboutNav.classList.remove("selected-nav");
     aboutNav.classList.remove("animate__animated");
     aboutNav.classList.remove("animate__pulse");
+    aboutNav.classList.remove("animate__infinite");
 }
 
 function aboutOnClick() {
@@ -27,13 +28,14 @@ function aboutOnClick() {
 }
 
 function onValuesHover(){
-    valuesNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+    valuesNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse', 'animate__infinite');
 }
 
 function offValuesHover(){
-    aboutNav.classList.remove("selected-nav");
-    aboutNav.classList.remove("animate__animated");
-    aboutNav.classList.remove("animate__pulse");
+    valuesNav.classList.remove("selected-nav");
+    valuesNav.classList.remove("animate__animated");
+    valuesNav.classList.remove("animate__pulse");
+    valuesNav.classList.remove("animate__infinite");
 }
 
 function valuesOnClick() {
@@ -45,13 +47,14 @@ function valuesOnClick() {
 }
 
 function onExperienceHover(){
-    expNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+    expNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse', 'animate__infinite');
 }
 
-function offValuesHover(){
+function offExperienceHover(){
     expNav.classList.remove("selected-nav");
     expNav.classList.remove("animate__animated");
     expNav.classList.remove("animate__pulse");
+    expNav.classList.remove("animate__infinite");
 }
 
 function experienceOnClick() {
@@ -63,13 +66,14 @@ function experienceOnClick() {
 }
 
 function onProjectsHover(){
-    projectsNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+    projectsNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse', 'animate__infinite');
 }
 
-function offValuesHover(){
+function offProjectsHover(){
     projectsNav.classList.remove("selected-nav");
     projectsNav.classList.remove("animate__animated");
     projectsNav.classList.remove("animate__pulse");
+    projectsNav.classList.remove("animate__infinite");
 }
 
 function projectsOnClick() {
