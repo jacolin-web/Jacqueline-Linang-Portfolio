@@ -1,44 +1,97 @@
-function getSections(){
-    var about = document.getElementById("about-section");
-    var values = document.getElementById("values-section");
-    var experience = document.getElementById("experience-section");
-    var project = document.getElementById("projects-section");
 
-    return {about, values, experience, project}
+let about = document.getElementById("about-section");
+let values = document.getElementById("values-section");
+let experience = document.getElementById("experience-section");
+let project = document.getElementById("projects-section");
+let aboutNav = document.getElementById("about-nav");
+let valuesNav = document.getElementById("values-nav");
+let expNav = document.getElementById("exp-nav");
+let projectsNav = document.getElementById("projects-nav");
+
+function onAboutHover(){
+    aboutNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+}
+
+function offAboutHover(){
+    aboutNav.classList.remove("selected-nav");
+    aboutNav.classList.remove("animate__animated");
+    aboutNav.classList.remove("animate__pulse");
 }
 
 function aboutOnClick() {
-    let {about, values, experience, project} = getSections()
-
     about.style.display = "";
-    values.style.display = "none";
-    experience.style.display = "none";
-    project.style.display = "none";
+
+    disableValues()
+    disableExperience()
+    disableProjects()
+}
+
+function onValuesHover(){
+    valuesNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+}
+
+function offValuesHover(){
+    aboutNav.classList.remove("selected-nav");
+    aboutNav.classList.remove("animate__animated");
+    aboutNav.classList.remove("animate__pulse");
 }
 
 function valuesOnClick() {
-    let {about, values, experience, project} = getSections()
-
     values.style.display = "flex";
-    about.style.display = "none";
-    experience.style.display = "none";
-    project.style.display = "none";
+
+    disableAbout()
+    disableExperience()
+    disableProjects()
+}
+
+function onExperienceHover(){
+    expNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+}
+
+function offValuesHover(){
+    expNav.classList.remove("selected-nav");
+    expNav.classList.remove("animate__animated");
+    expNav.classList.remove("animate__pulse");
 }
 
 function experienceOnClick() {
-    let {about, values, experience, project} = getSections()
-
     experience.style.display = "flex";
-    values.style.display = "none";
-    about.style.display = "none";
-    project.style.display = "none";
+
+    disableAbout()
+    disableValues()
+    disableProjects()
+}
+
+function onProjectsHover(){
+    projectsNav.classList.add("selected-nav", 'animate__animated', 'animate__pulse');
+}
+
+function offValuesHover(){
+    projectsNav.classList.remove("selected-nav");
+    projectsNav.classList.remove("animate__animated");
+    projectsNav.classList.remove("animate__pulse");
 }
 
 function projectsOnClick() {
-    let {about, values, experience, project} = getSections()
-
     project.style.display = "flex";
+
+    disableAbout()
+    disableValues()
+    disableExperience()
+}
+
+function disableAbout(){
     about.style.display = "none";
-    experience.style.display = "none";
+}
+
+function disableValues(){
     values.style.display = "none";
+}
+
+function disableExperience(){
+    experience.style.display = "none";
+}
+
+function disableProjects(){
+    project.style.display = "none";
 }

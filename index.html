@@ -32,30 +32,30 @@
         </div>
       </div>
     </div>
-    <div class="column is-full">
-      <div class="navigation"> 
-        <div class="has-text-centered">
-          <a onclick="aboutOnClick()">
-            about
-          </a>
+    <div class="column is-full column-nav">
+      <div class="navigation level"> 
+        <div class="has-text-centered level-item">
+          <div id="about-nav" class="px-2" onmouseover="onAboutHover()" onmouseout="offAboutHover()" onclick="aboutOnClick()">
+            <a>about</a>
+          </div>
             ✦  
-          <a onclick="valuesOnClick()">
-            values
-          </a>
+          <div id="values-nav" class="px-2" onmouseover="onValuesHover()" onmouseout="offValuesHover()" onclick="valuesOnClick()">
+            <a>values</a>
+          </div>
             ✦  
-          <a onclick="experienceOnClick()">
-            experience
-          </a>   
+          <div id="exp-nav" class="px-2" onmouseover="onExperienceHover()" onmouseout="onExperienceHover()" onclick="experienceOnClick()">
+            <a>experience</a>
+          </div>
             ✦ 
-          <a onclick="projectsOnClick()">
-            projects
-          </a>  
+          <div id="projects-nav"  class="px-2" onmouseover="onProjectsHover()" onmouseout="onProjectsHover()" onclick="projectsOnClick()">
+            <a>projects</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- ABOUT SECTION START -->
-  <div id="about-section" class="columns is-two-thirds-desktop is-centered pt-6 is-vcentered">
+  <div id="about-section" class="columns is-two-thirds-desktop is-centered is-vcentered animate__animated animate__fadeIn">
     <div class="column is-two-fifths">
       <img class="about centered" src="img/persona.png" />
     </div>
@@ -69,9 +69,10 @@
             Besides learning about new technologies, CSS animations and making games with WebGL, I'm also a big cinephile, journal-junkie and a  <b><a onclick="projectsOnClick()">kitchen witch</a></b>.
             
             <br/>
-            Feel free to connect
           </p>
         </div>
+        <br/>
+        <p>Let's connect</p>
         <br/>
         <div class="nav-links">
           <h2>
@@ -87,18 +88,19 @@
           <a href="https://letterboxd.com/magicalmorena/" alt="Github">
             <ion-icon name="film-outline"></ion-icon>
           </a>           
-          </h2>    
+          </h2>  
+          <br/>  
         </div>
       </div>
     </div>
   </div>
   <!-- ABOUT SECTION END -->
   <!-- VALUES SECTION START -->
-  <div id="values-section" class="columns is-centered is-desktop pt-6 px-6">
+  <div id="values-section" class="columns is-centered is-desktop animate__animated animate__fadeIn">
     <div class="column is-three-quarters">
       <div class="bubble">
         <div class="section-text" style="padding-top: 10px; padding-bottom: 25px">
-          <h1>Personal Core Values</h1>
+          <br/>
           <p>As an engineer, these are my three core values that motivate me:</p>
           <br/>
           <h2><ion-icon name="color-palette"></ion-icon> Design </h2>
@@ -111,17 +113,18 @@
           <br/>
           <h2> <ion-icon name="book"></ion-icon> Learning </h2>
           <p>I believe my greatest strength is my eagerness to learn. As an engineer, I love learning new technologies (currently I am learning Electron and WebGL). Outside of that, I love learning about film, Filipino folklore and spirituality, art history, human psychology and sociology.</p>
+          <br/>
         </div>
       </div>
     </div>
   </div>
   <!-- VALUES SECTION START -->
   <!-- EXPERIENCE SECTION START -->
-  <div id="experience-section" class="columns is-centered is-desktop pt-6 px-6 ">
+  <div id="experience-section" class="columns is-centered is-desktop animate__animated animate__fadeIn">
     <div class="column is-three-quarters">
       <div class="bubble">
         <div class="section-text" style="padding-top: 10px; padding-bottom: 25px">
-          <h1>Previous Experiences</h1>
+          <br/>
           <p>With about <b>five years</b> of industry experience, here's a quick overview:</p>
           <br/>
           <h2><ion-icon name="flash"></ion-icon> Synop</h2>
@@ -138,18 +141,21 @@
               Full resume download here
             </a>
           </p>
+          <br/>
         </div>
       </div>
     </div>
   </div>
   <!-- EXPERIENCE SECTION START -->
   <!-- PROJECTS SECTION START -->
-  <div id="projects-section" class="columns is-centered is-desktop pt-6 px-6">
+  <div id="projects-section" class="columns is-centered is-desktop animate__animated animate__fadeIn">
     <div class="column is-three-quarters">
       <div class="bubble">
         <div class="section-text" style="padding-top: 10px; padding-bottom: 25px">
-          <h1> Projects</h1>
-          <h2>Cooking Illustrations</h2>
+          <br/>
+          <p>Personal projects that I like to do for fun:</p>
+          <br/>
+          <h2><ion-icon name="fast-food"></ion-icon>Cooking Illustrations</h2>
           <div class="level">
             <div class="level-item">
               <figure class="image is-128x128">
@@ -175,6 +181,7 @@
           <p>This <b><a href="https://www.instagram.com/lutonilinang/">passion project</a></b> is me illustrating and documenting some of my favorite recipes passed to me through family, friends, and the internet.</p>
           <h2><ion-icon name="game-controller"></ion-icon> Game Jam</h2>
           <p>Designed and developed a <b><a href="https://thats-my-jam-sage.vercel.app/">React-based game</a></b> for a game jam.</p>
+          <br/>
         </div>
       </div>
     </div>
